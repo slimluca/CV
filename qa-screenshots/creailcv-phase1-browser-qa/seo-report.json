@@ -1,0 +1,271 @@
+{
+  "count": 26,
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "badCanonicals": [],
+  "localhostMetadata": [],
+  "jobPosting": false,
+  "faqWithoutVisible": [],
+  "pages": [
+    {
+      "url": "https://creailcv.it/",
+      "title": "Crea CV online e controlla ATS",
+      "description": "Crea un CV italiano moderno, controlla la compatibilità ATS e prepara una candidatura più forte.",
+      "canonical": "https://creailcv.it",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/crea-cv",
+      "title": "Crea il tuo CV online gratis | creailcv.it",
+      "description": "Builder CV italiano con anteprima live, salvataggio locale, controllo di completezza e download PDF.",
+      "canonical": "https://creailcv.it/crea-cv",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/cv-ats",
+      "title": "CV ATS: rendi il curriculum più leggibile | creailcv.it",
+      "description": "Capisci come funzionano i controlli ATS e verifica struttura, sezioni e completezza del tuo CV.",
+      "canonical": "https://creailcv.it/cv-ats",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/strumenti",
+      "title": "Strumenti gratuiti per CV e candidatura | creailcv.it",
+      "description": "Crea, controlla, adatta e invia: strumenti italiani gratuiti per preparare una candidatura più curata.",
+      "canonical": "https://creailcv.it/strumenti",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/strumenti/controllo-cv-ats",
+      "title": "Controllo CV ATS gratuito | creailcv.it",
+      "description": "Incolla il CV e controlla sezioni, contatti, lunghezza, parole ricorrenti e leggibilità ATS.",
+      "canonical": "https://creailcv.it/strumenti/controllo-cv-ats",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/strumenti/confronta-cv-annuncio",
+      "title": "Confronta CV e annuncio di lavoro | creailcv.it",
+      "description": "Confronta in modo deterministico parole chiave e competenze tra il CV e un annuncio.",
+      "canonical": "https://creailcv.it/strumenti/confronta-cv-annuncio",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/strumenti/generatore-lettera-presentazione",
+      "title": "Generatore lettera di presentazione | creailcv.it",
+      "description": "Crea una bozza italiana di lettera di presentazione da personalizzare per ruolo e azienda.",
+      "canonical": "https://creailcv.it/strumenti/generatore-lettera-presentazione",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/strumenti/email-candidatura",
+      "title": "Generatore email di candidatura | creailcv.it",
+      "description": "Genera oggetto e corpo per invio CV, candidatura spontanea, follow-up e ringraziamento.",
+      "canonical": "https://creailcv.it/strumenti/email-candidatura",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/strumenti/checklist-cv",
+      "title": "Checklist CV prima dell’invio | creailcv.it",
+      "description": "Completa dieci controlli essenziali su contenuti, formato, privacy e adattamento del CV.",
+      "canonical": "https://creailcv.it/strumenti/checklist-cv",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/strumenti/quiz-modello-cv",
+      "title": "Quiz: quale modello CV scegliere | creailcv.it",
+      "description": "Rispondi a tre domande e trova una struttura CV coerente con esperienza, contesto e priorità.",
+      "canonical": "https://creailcv.it/strumenti/quiz-modello-cv",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/modelli-curriculum-vitae",
+      "title": "Modelli curriculum vitae: scegli il formato | creailcv.it",
+      "description": "Confronta cinque modelli CV puliti per ATS, primo lavoro, profili professionali e settori creativi.",
+      "canonical": "https://creailcv.it/modelli-curriculum-vitae",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/curriculum-vitae-gratis",
+      "title": "Crea un curriculum vitae gratis, senza registrazione | creailcv.it",
+      "description": "Compila un CV ordinato nel browser e scaricalo in PDF senza creare un account.",
+      "canonical": "https://creailcv.it/curriculum-vitae-gratis",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/curriculum-vitae-online",
+      "title": "Curriculum vitae online: crea, modifica e scarica | creailcv.it",
+      "description": "Prepara online un CV italiano chiaro, con anteprima live e controllo di completezza.",
+      "canonical": "https://creailcv.it/curriculum-vitae-online",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/curriculum-vitae-europeo",
+      "title": "Curriculum europeo o CV moderno? Una scelta ragionata | creailcv.it",
+      "description": "Confronta Europass e un CV moderno ATS-friendly senza giudizi assoluti.",
+      "canonical": "https://creailcv.it/curriculum-vitae-europeo",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/cv-senza-esperienza",
+      "title": "CV senza esperienza: cosa scrivere davvero | creailcv.it",
+      "description": "Costruisci un CV credibile valorizzando formazione, progetti e competenze trasferibili.",
+      "canonical": "https://creailcv.it/cv-senza-esperienza",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/cv-studente",
+      "title": "CV studente: formazione, progetti e prime esperienze | creailcv.it",
+      "description": "Prepara un CV da studente chiaro per stage, tirocinio, lavoro part-time o primo impiego.",
+      "canonical": "https://creailcv.it/cv-studente",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/cv-commessa",
+      "title": "CV da commessa: esempio, competenze e consigli | creailcv.it",
+      "description": "Un buon CV da commessa rende subito visibili relazione con il cliente, conoscenza del prodotto e concretezza operativa. Non serve riempirlo di fo…",
+      "canonical": "https://creailcv.it/cv-commessa",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/cv-cameriere",
+      "title": "CV da cameriere: esempio pratico e competenze | creailcv.it",
+      "description": "Il CV da cameriere deve comunicare ritmo, precisione e qualità del servizio. Specifica il tipo di locale, il numero indicativo di coperti gestiti…",
+      "canonical": "https://creailcv.it/cv-cameriere",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/cv-operaio",
+      "title": "CV da operaio: competenze, profilo ed esempio | creailcv.it",
+      "description": "Per un ruolo operativo il CV deve far emergere lavorazioni conosciute, macchinari utilizzati, attenzione alla sicurezza e affidabilità sui turni.…",
+      "canonical": "https://creailcv.it/cv-operaio",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/cv-magazziniere",
+      "title": "CV da magazziniere: esempio e parole chiave | creailcv.it",
+      "description": "Un CV da magazziniere efficace mostra padronanza dei flussi, precisione documentale e attenzione alla sicurezza. Collega sempre strumenti e abili…",
+      "canonical": "https://creailcv.it/cv-magazziniere",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": true,
+      "visibleFaq": true
+    },
+    {
+      "url": "https://creailcv.it/lettera-di-presentazione",
+      "title": "Lettera di presentazione: crea una bozza mirata | creailcv.it",
+      "description": "Prepara una lettera italiana coerente con ruolo, azienda e motivazione.",
+      "canonical": "https://creailcv.it/lettera-di-presentazione",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/email-candidatura",
+      "title": "Email di candidatura: oggetto e testo pronti da adattare | creailcv.it",
+      "description": "Scrivi un’email concisa per invio CV, candidatura spontanea o follow-up.",
+      "canonical": "https://creailcv.it/email-candidatura",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/chi-siamo",
+      "title": "Un modo più consapevole di preparare il CV | creailcv.it",
+      "description": "Scopri principi, limiti e approccio di creailcv.it.",
+      "canonical": "https://creailcv.it/chi-siamo",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/privacy",
+      "title": "Informativa privacy | creailcv.it",
+      "description": "Come vengono gestiti i dati nella prima versione di creailcv.it.",
+      "canonical": "https://creailcv.it/privacy",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/termini",
+      "title": "Termini di utilizzo | creailcv.it",
+      "description": "Condizioni semplici e trasparenti per usare creailcv.it.",
+      "canonical": "https://creailcv.it/termini",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    },
+    {
+      "url": "https://creailcv.it/contatti",
+      "title": "Contatti | creailcv.it",
+      "description": "Contatta creailcv.it tramite il tuo programma email.",
+      "canonical": "https://creailcv.it/contatti",
+      "localhostMetadata": false,
+      "jobPosting": false,
+      "faqSchema": false,
+      "visibleFaq": false
+    }
+  ]
+}

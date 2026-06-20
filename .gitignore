@@ -12,6 +12,9 @@
 
 # testing
 /coverage
+/qa-screenshots/creailcv-phase1-browser-qa/*.png
+/qa-screenshots/creailcv-phase1-browser-qa/*.pdf
+/qa-screenshots/creailcv-phase1-browser-qa/*.mjs
 
 # next.js
 /.next/
