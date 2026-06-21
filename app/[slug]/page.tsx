@@ -250,11 +250,25 @@ function TemplatesPage() {
             <p className="mt-3 text-sm leading-6 text-[#5e6c69]">
               {template.text}
             </p>
+            <dl className="mt-4 grid gap-3 text-sm leading-6">
+              <div>
+                <dt className="font-black">Ideale per</dt>
+                <dd className="text-[#5e6c69]">{template.bestFor}</dd>
+              </div>
+              <div>
+                <dt className="font-black">Quando usarlo</dt>
+                <dd className="text-[#5e6c69]">{template.when}</dd>
+              </div>
+              <div>
+                <dt className="font-black">Compatibilità ATS</dt>
+                <dd className="text-[#5e6c69]">{template.ats}</dd>
+              </div>
+            </dl>
             <Link
-              className="mt-5 inline-block font-bold text-[#176b4d]"
-              href="/crea-cv"
+              className="btn btn-secondary mt-5 w-full"
+              href={`/crea-cv?template=${template.id}`}
             >
-              Crea con questo approccio →
+              {template.cta} →
             </Link>
           </Card>
         ))}

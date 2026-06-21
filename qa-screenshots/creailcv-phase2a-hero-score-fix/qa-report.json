@@ -1,0 +1,252 @@
+{
+  "layouts": [
+    {
+      "viewport": "desktop-1440",
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "headingSize": 63.36,
+      "headingHeight": 323.125,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "headingSize": 55.2,
+      "headingHeight": 114.8125,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/strumenti/controllo-cv-ats",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "headingSize": 55.2,
+      "headingHeight": 57.40625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/strumenti/confronta-cv-annuncio",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "headingSize": 55.2,
+      "headingHeight": 57.40625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "laptop-1280",
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "headingSize": 56.32,
+      "headingHeight": 229.75,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "laptop-1280",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "headingSize": 51.2,
+      "headingHeight": 106.5,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "laptop-1280",
+      "route": "/strumenti/controllo-cv-ats",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "headingSize": 51.2,
+      "headingHeight": 53.25,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "laptop-1280",
+      "route": "/strumenti/confronta-cv-annuncio",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "headingSize": 51.2,
+      "headingHeight": 53.25,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "headingSize": 37.6,
+      "headingHeight": 76.6875,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "headingSize": 32,
+      "headingHeight": 33.265625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/strumenti/controllo-cv-ats",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "headingSize": 32,
+      "headingHeight": 33.265625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/strumenti/confronta-cv-annuncio",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "headingSize": 32,
+      "headingHeight": 33.265625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-390",
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "headingSize": 40.95,
+      "headingHeight": 170.3125,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-390",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "headingSize": 32,
+      "headingHeight": 66.53125,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-390",
+      "route": "/strumenti/controllo-cv-ats",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "headingSize": 32,
+      "headingHeight": 33.265625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-390",
+      "route": "/strumenti/confronta-cv-annuncio",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "headingSize": 32,
+      "headingHeight": 33.265625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-360",
+      "route": "/",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "headingSize": 37.8,
+      "headingHeight": 157.1875,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-360",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "headingSize": 32,
+      "headingHeight": 99.796875,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-360",
+      "route": "/strumenti/controllo-cv-ats",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "headingSize": 32,
+      "headingHeight": 33.265625,
+      "primaryVisible": true
+    },
+    {
+      "viewport": "mobile-360",
+      "route": "/strumenti/confronta-cv-annuncio",
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "headingSize": 32,
+      "headingHeight": 66.53125,
+      "primaryVisible": true
+    }
+  ],
+  "scores": {
+    "empty": {
+      "completeness": "8%",
+      "ats": "0%",
+      "guidance": true
+    },
+    "minimal": {
+      "completeness": "25%",
+      "ats": "8%",
+      "guidance": true
+    },
+    "partial": {
+      "completeness": "58%",
+      "ats": "53%",
+      "guidance": false
+    },
+    "complete": {
+      "completeness": "100%",
+      "ats": "100%",
+      "guidance": false
+    },
+    "completeMobileOverflow": false,
+    "pasted": {
+      "score": "100",
+      "disclaimer": true
+    }
+  },
+  "consoleErrors": []
+}

@@ -1,0 +1,225 @@
+{
+  "layouts": [
+    {
+      "viewport": "1440",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1440",
+      "route": "/modelli-curriculum-vitae",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1440",
+      "route": "/strumenti/quiz-modello-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1440",
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1280",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1280",
+      "route": "/modelli-curriculum-vitae",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1280",
+      "route": "/strumenti/quiz-modello-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "1280",
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "768",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "768",
+      "route": "/modelli-curriculum-vitae",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "768",
+      "route": "/strumenti/quiz-modello-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "768",
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "390",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "390",
+      "route": "/modelli-curriculum-vitae",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "390",
+      "route": "/strumenti/quiz-modello-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "390",
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "360",
+      "route": "/crea-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "360",
+      "route": "/modelli-curriculum-vitae",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "360",
+      "route": "/strumenti/quiz-modello-cv",
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "viewport": "360",
+      "route": "/",
+      "status": 200,
+      "overflow": false
+    }
+  ],
+  "templates": {
+    "ats": {
+      "querySelected": true,
+      "preview": "ats",
+      "filename": "marco-bianchi-addetto-vendita-ats-semplice.pdf",
+      "size": 6349,
+      "text": {
+        "name": true,
+        "role": true,
+        "experience": true,
+        "education": true,
+        "skills": true,
+        "languages": true,
+        "courses": true,
+        "privacy": true,
+        "placeholder": false
+      }
+    },
+    "moderno": {
+      "querySelected": true,
+      "preview": "moderno",
+      "filename": "marco-bianchi-addetto-vendita-moderno-professionale.pdf",
+      "size": 6327,
+      "text": {
+        "name": true,
+        "role": true,
+        "experience": true,
+        "education": true,
+        "skills": true,
+        "languages": true,
+        "courses": true,
+        "privacy": true,
+        "placeholder": false
+      }
+    },
+    "classico": {
+      "querySelected": true,
+      "preview": "classico",
+      "filename": "marco-bianchi-addetto-vendita-classico-elegante.pdf",
+      "size": 6361,
+      "text": {
+        "name": true,
+        "role": true,
+        "experience": true,
+        "education": true,
+        "skills": true,
+        "languages": true,
+        "courses": true,
+        "privacy": true,
+        "placeholder": false
+      }
+    },
+    "primo-lavoro": {
+      "querySelected": true,
+      "preview": "primo-lavoro",
+      "filename": "marco-bianchi-addetto-vendita-primo-lavoro.pdf",
+      "size": 6349,
+      "text": {
+        "name": true,
+        "role": true,
+        "experience": true,
+        "education": true,
+        "skills": true,
+        "languages": true,
+        "courses": true,
+        "privacy": true,
+        "placeholder": false
+      }
+    },
+    "creativo": {
+      "querySelected": true,
+      "preview": "creativo",
+      "filename": "marco-bianchi-addetto-vendita-creativo-pulito.pdf",
+      "size": 6413,
+      "text": {
+        "name": true,
+        "role": true,
+        "experience": true,
+        "education": true,
+        "skills": true,
+        "languages": true,
+        "courses": true,
+        "privacy": true,
+        "placeholder": false
+      }
+    }
+  },
+  "persistence": true,
+  "quiz": true,
+  "scores": {
+    "before": [
+      "100%",
+      "100%"
+    ],
+    "afterTemplateChange": [
+      "100%",
+      "100%"
+    ],
+    "unchanged": true
+  },
+  "consoleErrors": []
+}
