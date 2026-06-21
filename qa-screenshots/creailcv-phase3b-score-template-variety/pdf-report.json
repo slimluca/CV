@@ -1,0 +1,181 @@
+{
+  "pdfs": [
+    {
+      "id": "ats",
+      "file": "giulia-bianchi-developer-software-ats.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "moderno",
+      "file": "giulia-bianchi-developer-software-moderno.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "classico",
+      "file": "giulia-bianchi-developer-software-classico.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "primo-lavoro",
+      "file": "giulia-bianchi-developer-software-primo-lavoro.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "creativo",
+      "file": "giulia-bianchi-developer-software-creativo.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "compatto-una-pagina",
+      "file": "giulia-bianchi-developer-software-compatto-una-pagina.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "executive-premium",
+      "file": "giulia-bianchi-developer-software-executive-premium.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "tecnico-ordinato",
+      "file": "giulia-bianchi-developer-software-tecnico-ordinato.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "retail-hospitality",
+      "file": "giulia-bianchi-developer-software-retail-hospitality.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "sanitario-pulito",
+      "file": "giulia-bianchi-developer-software-sanitario-pulito.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    },
+    {
+      "id": "portfolio-leggero",
+      "file": "giulia-bianchi-developer-software-portfolio-leggero.pdf",
+      "pages": 1,
+      "textLength": 990,
+      "requiredPresent": {
+        "Giulia Bianchi": true,
+        "Developer software": true,
+        "NordTech Srl": true,
+        "TypeScript e React": true,
+        "Università di Bologna": true
+      },
+      "forbiddenPresent": [],
+      "brokenCharacters": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

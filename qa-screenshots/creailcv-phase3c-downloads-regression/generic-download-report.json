@@ -1,0 +1,13 @@
+{
+  "letter": {
+    "fileName": "lettera-presentazione-creailcv.txt",
+    "noPlaceholders": true,
+    "hasNaturalFallback": true
+  },
+  "email": {
+    "fileName": "email-candidatura-creailcv.txt",
+    "noPlaceholders": true,
+    "hasSubject": true
+  },
+  "passed": true
+}

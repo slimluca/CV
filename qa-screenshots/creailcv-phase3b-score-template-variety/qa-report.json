@@ -1,0 +1,459 @@
+{
+  "generatedAt": "2026-06-21T09:35:35.221Z",
+  "responsive": [
+    {
+      "route": "/",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/modelli-curriculum-vitae",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/quiz-modello-cv",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "desktop-1280",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "desktop-1280",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/modelli-curriculum-vitae",
+      "viewport": "desktop-1280",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/quiz-modello-cv",
+      "viewport": "desktop-1280",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "tablet-768",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "tablet-768",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/modelli-curriculum-vitae",
+      "viewport": "tablet-768",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/quiz-modello-cv",
+      "viewport": "tablet-768",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "mobile-390",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/modelli-curriculum-vitae",
+      "viewport": "mobile-390",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/quiz-modello-cv",
+      "viewport": "mobile-390",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-360",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "mobile-360",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/modelli-curriculum-vitae",
+      "viewport": "mobile-360",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/quiz-modello-cv",
+      "viewport": "mobile-360",
+      "status": 200,
+      "overflow": false,
+      "consoleErrors": []
+    }
+  ],
+  "scores": {
+    "empty": {
+      "completeness": 0,
+      "ats": 0
+    },
+    "emptyMessage": true,
+    "guidance": true,
+    "minimal": {
+      "completeness": 12,
+      "ats": 8
+    },
+    "partial": {
+      "completeness": 68,
+      "ats": 70
+    },
+    "complete": {
+      "completeness": 100,
+      "ats": 100
+    },
+    "templateOnly": {
+      "completeness": 0,
+      "ats": 0,
+      "selected": "true"
+    },
+    "beforeTemplateOnly": {
+      "completeness": 100,
+      "ats": 100
+    }
+  },
+  "templates": {
+    "previewClassCount": 11,
+    "optionCount": 11,
+    "touchTargets": [
+      {
+        "id": "ats",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "primo-lavoro",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "compatto-una-pagina",
+        "width": 371.34375,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "moderno",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "classico",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "executive-premium",
+        "width": 371.34375,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "tecnico-ordinato",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "retail-hospitality",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "sanitario-pulito",
+        "width": 371.34375,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "creativo",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      },
+      {
+        "id": "portfolio-leggero",
+        "width": 371.328125,
+        "height": 210,
+        "tappable": true
+      }
+    ],
+    "persisted": true,
+    "pageCardCount": 11,
+    "pageSwatchClassCount": 11
+  },
+  "queryParameters": [
+    {
+      "id": "ats",
+      "selected": true,
+      "preview": "ats"
+    },
+    {
+      "id": "moderno",
+      "selected": true,
+      "preview": "moderno"
+    },
+    {
+      "id": "classico",
+      "selected": true,
+      "preview": "classico"
+    },
+    {
+      "id": "primo-lavoro",
+      "selected": true,
+      "preview": "primo-lavoro"
+    },
+    {
+      "id": "creativo",
+      "selected": true,
+      "preview": "creativo"
+    },
+    {
+      "id": "compatto-una-pagina",
+      "selected": true,
+      "preview": "compatto-una-pagina"
+    },
+    {
+      "id": "executive-premium",
+      "selected": true,
+      "preview": "executive-premium"
+    },
+    {
+      "id": "tecnico-ordinato",
+      "selected": true,
+      "preview": "tecnico-ordinato"
+    },
+    {
+      "id": "retail-hospitality",
+      "selected": true,
+      "preview": "retail-hospitality"
+    },
+    {
+      "id": "sanitario-pulito",
+      "selected": true,
+      "preview": "sanitario-pulito"
+    },
+    {
+      "id": "portfolio-leggero",
+      "selected": true,
+      "preview": "portfolio-leggero"
+    }
+  ],
+  "quiz": [
+    {
+      "answer": "Studente o primo lavoro",
+      "expected": "primo-lavoro",
+      "href": "/crea-cv?template=primo-lavoro",
+      "passed": true
+    },
+    {
+      "answer": "Manager o profilo senior",
+      "expected": "executive-premium",
+      "href": "/crea-cv?template=executive-premium",
+      "passed": true
+    },
+    {
+      "answer": "Ruolo tecnico, IT o logistica",
+      "expected": "tecnico-ordinato",
+      "href": "/crea-cv?template=tecnico-ordinato",
+      "passed": true
+    },
+    {
+      "answer": "Retail, hospitality o front office",
+      "expected": "retail-hospitality",
+      "href": "/crea-cv?template=retail-hospitality",
+      "passed": true
+    },
+    {
+      "answer": "Sanità, assistenza o cura",
+      "expected": "sanitario-pulito",
+      "href": "/crea-cv?template=sanitario-pulito",
+      "passed": true
+    },
+    {
+      "answer": "Creativo, marketing o digital",
+      "expected": "portfolio-leggero",
+      "href": "/crea-cv?template=portfolio-leggero",
+      "passed": true
+    },
+    {
+      "answer": "Voglio un CV breve e diretto",
+      "expected": "compatto-una-pagina",
+      "href": "/crea-cv?template=compatto-una-pagina",
+      "passed": true
+    },
+    {
+      "answer": "Profilo professionale trasversale",
+      "expected": "ats",
+      "href": "/crea-cv?template=ats",
+      "passed": true
+    }
+  ],
+  "pdfs": [
+    {
+      "id": "ats",
+      "name": "ATS semplice",
+      "fileName": "giulia-bianchi-developer-software-ats.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-ats.pdf",
+      "selected": true,
+      "previewTemplate": "ats",
+      "exists": true
+    },
+    {
+      "id": "moderno",
+      "name": "Moderno professionale",
+      "fileName": "giulia-bianchi-developer-software-moderno.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-moderno.pdf",
+      "selected": true,
+      "previewTemplate": "moderno",
+      "exists": true
+    },
+    {
+      "id": "classico",
+      "name": "Classico elegante",
+      "fileName": "giulia-bianchi-developer-software-classico.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-classico.pdf",
+      "selected": true,
+      "previewTemplate": "classico",
+      "exists": true
+    },
+    {
+      "id": "primo-lavoro",
+      "name": "Primo lavoro",
+      "fileName": "giulia-bianchi-developer-software-primo-lavoro.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-primo-lavoro.pdf",
+      "selected": true,
+      "previewTemplate": "primo-lavoro",
+      "exists": true
+    },
+    {
+      "id": "creativo",
+      "name": "Creativo pulito",
+      "fileName": "giulia-bianchi-developer-software-creativo.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-creativo.pdf",
+      "selected": true,
+      "previewTemplate": "creativo",
+      "exists": true
+    },
+    {
+      "id": "compatto-una-pagina",
+      "name": "Compatto una pagina",
+      "fileName": "giulia-bianchi-developer-software-compatto-una-pagina.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-compatto-una-pagina.pdf",
+      "selected": true,
+      "previewTemplate": "compatto-una-pagina",
+      "exists": true
+    },
+    {
+      "id": "executive-premium",
+      "name": "Executive premium",
+      "fileName": "giulia-bianchi-developer-software-executive-premium.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-executive-premium.pdf",
+      "selected": true,
+      "previewTemplate": "executive-premium",
+      "exists": true
+    },
+    {
+      "id": "tecnico-ordinato",
+      "name": "Tecnico ordinato",
+      "fileName": "giulia-bianchi-developer-software-tecnico-ordinato.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-tecnico-ordinato.pdf",
+      "selected": true,
+      "previewTemplate": "tecnico-ordinato",
+      "exists": true
+    },
+    {
+      "id": "retail-hospitality",
+      "name": "Retail e hospitality",
+      "fileName": "giulia-bianchi-developer-software-retail-hospitality.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-retail-hospitality.pdf",
+      "selected": true,
+      "previewTemplate": "retail-hospitality",
+      "exists": true
+    },
+    {
+      "id": "sanitario-pulito",
+      "name": "Sanitario pulito",
+      "fileName": "giulia-bianchi-developer-software-sanitario-pulito.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-sanitario-pulito.pdf",
+      "selected": true,
+      "previewTemplate": "sanitario-pulito",
+      "exists": true
+    },
+    {
+      "id": "portfolio-leggero",
+      "name": "Portfolio leggero",
+      "fileName": "giulia-bianchi-developer-software-portfolio-leggero.pdf",
+      "path": "C:\\Code Projects\\CV\\qa-screenshots\\creailcv-phase3b-score-template-variety\\giulia-bianchi-developer-software-portfolio-leggero.pdf",
+      "selected": true,
+      "previewTemplate": "portfolio-leggero",
+      "exists": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContactForm } from "@/components/contact-form";
+import { ApplicationPack } from "@/components/application-pack";
 import {
   Breadcrumbs,
   Card,
@@ -10,7 +11,12 @@ import {
   PageCTA,
   SeoHero,
 } from "@/components/ui";
-import { basicPages, professionPages, templates } from "@/data/content";
+import {
+  basicPages,
+  professionPages,
+  templates,
+  type CvTemplateId,
+} from "@/data/content";
 import { seoProfessionPages, situationPages } from "@/data/seo-content";
 import { pageMetadata, siteUrl } from "@/lib/site";
 
@@ -53,7 +59,7 @@ export async function generateMetadata({
   if (slug === "modelli-curriculum-vitae")
     return pageMetadata(
       "Modelli curriculum vitae: scegli il formato",
-      "Confronta cinque modelli CV puliti per ATS, primo lavoro, profili professionali e settori creativi.",
+      "Confronta undici modelli CV reali per ATS, primo lavoro, profili senior, settori tecnici, assistenziali e creativi.",
       `/${slug}`,
     );
   if (slug === "contatti")
@@ -128,6 +134,8 @@ export default async function ContentPage({
           </div>
         </section>
       )}
+      {(slug === "lettera-di-presentazione" ||
+        slug === "email-candidatura") && <ApplicationPack />}
       <PageCTA href={primaryHref} label={page.cta ?? "Crea il tuo CV gratis"} />
     </>
   );
@@ -425,58 +433,144 @@ function TemplatesPage() {
       <SeoHero
         eyebrow="Modelli CV"
         title="Scegli una struttura che faccia leggere bene la tua esperienza."
-        intro="Cinque direzioni per esigenze diverse. Il builder esporta un PDF essenziale, testuale e ordinato: una base professionale da adattare ai contenuti e al contesto della candidatura."
+        intro="Undici modelli reali per esigenze diverse. Ogni stile cambia anteprima e PDF, mantenendo contenuti testuali, leggibili e facili da adattare alla candidatura."
         primaryHref="/strumenti/quiz-modello-cv"
         primaryLabel="Fai il quiz del modello"
       />
-      <section className="container-site grid gap-5 pb-20 sm:grid-cols-2 lg:grid-cols-3">
-        {templates.map((template, index) => (
-          <Card className="overflow-hidden p-5" key={template.name}>
-            <div
-              className={`aspect-[4/3] rounded-2xl border p-6 ${index === 1 ? "bg-[#122b36]" : index === 4 ? "bg-[#efe5dc]" : "bg-[#fafaf7]"}`}
-            >
-              <div
-                className={`h-3 w-2/5 rounded ${index === 1 ? "bg-white" : "bg-[#18323a]"}`}
-              />
-              <div
-                className={`mt-5 h-2 rounded ${index === 1 ? "bg-white/20" : "bg-[#d6ddda]"}`}
-              />
-              <div
-                className={`mt-2 h-2 w-4/5 rounded ${index === 1 ? "bg-white/20" : "bg-[#d6ddda]"}`}
-              />
-              <div
-                className={`mt-7 h-2 w-1/4 rounded ${index === 1 ? "bg-[#8ed1ad]" : "bg-[#176b4d]"}`}
-              />
-            </div>
-            <p className="eyebrow mt-5">{template.tone}</p>
-            <h2 className="mt-2 text-xl font-black">{template.name}</h2>
-            <p className="mt-3 text-sm leading-6 text-[#5e6c69]">
-              {template.text}
-            </p>
-            <dl className="mt-4 grid gap-3 text-sm leading-6">
-              <div>
-                <dt className="font-black">Ideale per</dt>
-                <dd className="text-[#5e6c69]">{template.bestFor}</dd>
+      <section className="container-site grid gap-12 pb-20">
+        {(["Essenziali", "Professionali", "Settore", "Creativi"] as const).map(
+          (group) => (
+            <section key={group}>
+              <div className="flex items-center gap-4">
+                <h2 className="title-md">{group}</h2>
+                <div className="h-px flex-1 bg-[#dfe5df]" />
               </div>
-              <div>
-                <dt className="font-black">Quando usarlo</dt>
-                <dd className="text-[#5e6c69]">{template.when}</dd>
+              <div className="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {templates
+                  .filter((template) => template.group === group)
+                  .map((template) => (
+                    <Card
+                      className="flex h-full flex-col overflow-hidden p-5"
+                      key={template.name}
+                    >
+                      <TemplateSwatch id={template.id} />
+                      <p className="eyebrow mt-5">{template.tone}</p>
+                      <h3 className="mt-2 text-xl font-black">
+                        {template.name}
+                      </h3>
+                      <p className="mt-3 text-sm leading-6 text-[#5e6c69]">
+                        {template.text}
+                      </p>
+                      <dl className="mt-4 grid gap-3 text-sm leading-6">
+                        <div>
+                          <dt className="font-black">Ideale per</dt>
+                          <dd className="text-[#5e6c69]">{template.bestFor}</dd>
+                        </div>
+                        <div>
+                          <dt className="font-black">Quando usarlo</dt>
+                          <dd className="text-[#5e6c69]">{template.when}</dd>
+                        </div>
+                        <div>
+                          <dt className="font-black">Compatibilità ATS</dt>
+                          <dd className="text-[#5e6c69]">{template.ats}</dd>
+                        </div>
+                        <div>
+                          <dt className="font-black">Ruoli consigliati</dt>
+                          <dd className="text-[#5e6c69]">
+                            {template.recommended}
+                          </dd>
+                        </div>
+                      </dl>
+                      <Link
+                        className="btn btn-secondary mt-auto w-full pt-5"
+                        href={`/crea-cv?template=${template.id}`}
+                      >
+                        {template.cta} →
+                      </Link>
+                    </Card>
+                  ))}
               </div>
-              <div>
-                <dt className="font-black">Compatibilità ATS</dt>
-                <dd className="text-[#5e6c69]">{template.ats}</dd>
-              </div>
-            </dl>
-            <Link
-              className="btn btn-secondary mt-5 w-full"
-              href={`/crea-cv?template=${template.id}`}
-            >
-              {template.cta} →
-            </Link>
-          </Card>
-        ))}
+            </section>
+          ),
+        )}
       </section>
     </>
+  );
+}
+
+function TemplateSwatch({ id }: { id: CvTemplateId }) {
+  const styles: Record<
+    CvTemplateId,
+    { frame: string; title: string; accent: string }
+  > = {
+    ats: {
+      frame: "border-[#cbd4cf] bg-white",
+      title: "bg-[#263531]",
+      accent: "bg-[#263531]",
+    },
+    moderno: {
+      frame: "border-t-8 border-[#176b4d] bg-white",
+      title: "bg-[#18323a]",
+      accent: "bg-[#176b4d]",
+    },
+    classico: {
+      frame: "border-[#b8ad9f] bg-[#fbfaf7] text-center",
+      title: "mx-auto bg-[#6e5a49]",
+      accent: "mx-auto bg-[#8a7461]",
+    },
+    "primo-lavoro": {
+      frame: "border-l-8 border-[#365f88] bg-[#edf3f8]",
+      title: "bg-[#263f57]",
+      accent: "bg-[#365f88]",
+    },
+    creativo: {
+      frame: "border-[#122b36] bg-[#122b36]",
+      title: "bg-white",
+      accent: "bg-[#b54e3b]",
+    },
+    "compatto-una-pagina": {
+      frame: "border-2 border-[#52645e] bg-white !p-4",
+      title: "bg-[#31443e]",
+      accent: "bg-[#52645e]",
+    },
+    "executive-premium": {
+      frame: "border-t-8 border-[#27343c] bg-[#faf7f1]",
+      title: "bg-[#27343c]",
+      accent: "bg-[#a88b5d]",
+    },
+    "tecnico-ordinato": {
+      frame: "border-l-[10px] border-[#294f70] bg-[#edf3f7]",
+      title: "bg-[#294f70]",
+      accent: "bg-[#5b7890]",
+    },
+    "retail-hospitality": {
+      frame: "border-t-[10px] border-[#b9683e] bg-[#fff1e5]",
+      title: "bg-[#8f4828]",
+      accent: "bg-[#d48a60]",
+    },
+    "sanitario-pulito": {
+      frame: "border-l-8 border-[#2d817a] bg-[#edf8f6]",
+      title: "bg-[#246b66]",
+      accent: "bg-[#55a39c]",
+    },
+    "portfolio-leggero": {
+      frame: "border-t-[10px] border-[#684278] bg-[#34273d]",
+      title: "bg-white",
+      accent: "bg-[#c39ad2]",
+    },
+  };
+  const style = styles[id];
+  return (
+    <div
+      data-template-swatch={id}
+      className={`aspect-[4/3] rounded-2xl border p-6 ${style.frame}`}
+      aria-hidden="true"
+    >
+      <div className={`h-3 w-2/5 rounded ${style.title}`} />
+      <div className="mt-5 h-2 rounded bg-[#cbd4d0]/50" />
+      <div className="mt-2 h-2 w-4/5 rounded bg-[#cbd4d0]/50" />
+      <div className={`mt-7 h-2 w-1/4 rounded ${style.accent}`} />
+    </div>
   );
 }
 

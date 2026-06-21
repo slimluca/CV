@@ -71,12 +71,17 @@ export function Checklist() {
 
 const questions = [
   {
-    text: "Qual è il tuo livello di esperienza?",
-    key: "level",
+    text: "Quale situazione descrive meglio il tuo profilo?",
+    key: "profile",
     answers: [
-      ["Sto cercando il primo lavoro", "first"],
-      ["Ho già esperienze pertinenti", "pro"],
-      ["Ho un percorso lungo e formale", "classic"],
+      ["Studente o primo lavoro", "primo-lavoro"],
+      ["Manager o profilo senior", "executive-premium"],
+      ["Ruolo tecnico, IT o logistica", "tecnico-ordinato"],
+      ["Retail, hospitality o front office", "retail-hospitality"],
+      ["Sanità, assistenza o cura", "sanitario-pulito"],
+      ["Creativo, marketing o digital", "portfolio-leggero"],
+      ["Voglio un CV breve e diretto", "compatto-una-pagina"],
+      ["Profilo professionale trasversale", "moderno"],
     ],
   },
   {
@@ -84,8 +89,9 @@ const questions = [
     key: "context",
     answers: [
       ["Azienda con candidatura online", "ats"],
-      ["Settore creativo o comunicazione", "creative"],
-      ["Ente o contesto tradizionale", "classic"],
+      ["Candidatura diretta o networking", "moderno"],
+      ["Ente o contesto tradizionale", "classico"],
+      ["Contesto che valorizza personalità", "creativo"],
     ],
   },
   {
@@ -93,8 +99,8 @@ const questions = [
     key: "priority",
     answers: [
       ["Massima semplicità", "ats"],
-      ["Equilibrio tra stile e chiarezza", "modern"],
-      ["Un tocco personale", "creative"],
+      ["Equilibrio tra stile e chiarezza", "moderno"],
+      ["Un tocco personale", "creativo"],
     ],
   },
 ];
@@ -102,16 +108,11 @@ const questions = [
 export function TemplateQuiz() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const complete = Object.keys(answers).length === questions.length;
-  const values = Object.values(answers);
-  const resultId: CvTemplateId = values.includes("first")
-    ? "primo-lavoro"
-    : values.filter((x) => x === "classic").length >= 2
-      ? "classico"
-      : values.filter((x) => x === "creative").length >= 2
-        ? "creativo"
-        : values.includes("ats")
-          ? "ats"
-          : "moderno";
+  const profile = answers.profile as CvTemplateId | undefined;
+  const resultId: CvTemplateId =
+    profile && profile !== "moderno"
+      ? profile
+      : ((answers.context || answers.priority || "moderno") as CvTemplateId);
   const result = templates.find((item) => item.id === resultId)!;
   const why: Record<CvTemplateId, string> = {
     "primo-lavoro":
@@ -122,6 +123,18 @@ export function TemplateQuiz() {
     ats: "Privilegia una colonna e titoli standard per le candidature online.",
     moderno:
       "Bilancia leggibilità, personalità e una presentazione contemporanea.",
+    "compatto-una-pagina":
+      "Riduce gli spazi e mantiene il percorso concentrato in una presentazione diretta.",
+    "executive-premium":
+      "Dà gerarchia a responsabilità, impatto e autorevolezza di un profilo senior.",
+    "tecnico-ordinato":
+      "Separa con chiarezza strumenti, competenze e contenuti tecnici.",
+    "retail-hospitality":
+      "Valorizza servizio al cliente, lingue, disponibilità e concretezza operativa.",
+    "sanitario-pulito":
+      "Mette in evidenza qualifiche, contesti assistenziali e disponibilità con uno stile calmo.",
+    "portfolio-leggero":
+      "Dà più evidenza a portfolio e presenza digitale mantenendo il CV leggibile.",
   };
   return (
     <div className="grid gap-6 lg:grid-cols-[1.15fr_.85fr]">
@@ -132,7 +145,9 @@ export function TemplateQuiz() {
               <span className="mr-2 text-[#176b4d]">{index + 1}.</span>
               {q.text}
             </legend>
-            <div className="mt-3 grid gap-2 sm:grid-cols-3">
+            <div
+              className={`mt-3 grid gap-2 ${q.answers.length > 4 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}
+            >
               {q.answers.map(([label, value]) => (
                 <button
                   onClick={() => setAnswers({ ...answers, [q.key]: value })}

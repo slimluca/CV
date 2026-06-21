@@ -23,6 +23,15 @@
 /qa-screenshots/creailcv-phase2b-cv-templates/*.mjs
 /qa-screenshots/creailcv-phase3a-seo-tools/*.png
 /qa-screenshots/creailcv-phase3a-seo-tools/*.mjs
+/qa-screenshots/creailcv-phase3b-score-template-variety/*.png
+/qa-screenshots/creailcv-phase3b-score-template-variety/*.pdf
+/qa-screenshots/creailcv-phase3b-score-template-variety/*.mjs
+/qa-screenshots/creailcv-phase3b-score-template-variety/*.py
+/qa-screenshots/creailcv-phase3c-downloads-regression/*.png
+/qa-screenshots/creailcv-phase3c-downloads-regression/*.pdf
+/qa-screenshots/creailcv-phase3c-downloads-regression/*.txt
+/qa-screenshots/creailcv-phase3c-downloads-regression/*.mjs
+/qa-screenshots/creailcv-phase3c-downloads-regression/*.py
 
 # next.js
 /.next/

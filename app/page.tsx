@@ -339,27 +339,45 @@ export default function Home() {
             </Button>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {templates.map((template, index) => (
-              <Card className="p-5" key={template.name}>
-                <div
-                  className={`h-32 rounded-xl border border-[#dce3de] p-4 ${index === 1 ? "bg-[#122b36]" : "bg-white"}`}
+            {templates
+              .filter((template) =>
+                [
+                  "ats",
+                  "executive-premium",
+                  "tecnico-ordinato",
+                  "retail-hospitality",
+                  "sanitario-pulito",
+                  "portfolio-leggero",
+                ].includes(template.id),
+              )
+              .map((template, index) => (
+                <Link
+                  className="card p-5 transition hover:-translate-y-1 hover:border-[#9db9a6]"
+                  href={`/crea-cv?template=${template.id}`}
+                  key={template.name}
                 >
                   <div
-                    className={`h-2 w-24 rounded ${index === 1 ? "bg-white" : "bg-[#1f373d]"}`}
-                  />
-                  <div
-                    className={`mt-4 h-1.5 rounded ${index === 1 ? "bg-white/25" : "bg-[#d6ddda]"}`}
-                  />
-                  <div
-                    className={`mt-2 h-1.5 w-4/5 rounded ${index === 1 ? "bg-white/25" : "bg-[#d6ddda]"}`}
-                  />
-                </div>
-                <p className="mt-4 text-xs font-black uppercase tracking-[.1em] text-[#176b4d]">
-                  {template.tone}
-                </p>
-                <h3 className="mt-2 font-bold">{template.name}</h3>
-              </Card>
-            ))}
+                    className={`h-32 rounded-xl border border-[#dce3de] p-4 ${index === 1 ? "bg-[#122b36]" : "bg-white"}`}
+                  >
+                    <div
+                      className={`h-2 w-24 rounded ${index === 1 ? "bg-white" : "bg-[#1f373d]"}`}
+                    />
+                    <div
+                      className={`mt-4 h-1.5 rounded ${index === 1 ? "bg-white/25" : "bg-[#d6ddda]"}`}
+                    />
+                    <div
+                      className={`mt-2 h-1.5 w-4/5 rounded ${index === 1 ? "bg-white/25" : "bg-[#d6ddda]"}`}
+                    />
+                  </div>
+                  <p className="mt-4 text-xs font-black uppercase tracking-[.1em] text-[#176b4d]">
+                    {template.tone}
+                  </p>
+                  <h3 className="mt-2 font-bold">{template.name}</h3>
+                  <p className="mt-2 text-xs leading-5 text-[#65736f]">
+                    {template.text}
+                  </p>
+                </Link>
+              ))}
           </div>
         </div>
       </section>

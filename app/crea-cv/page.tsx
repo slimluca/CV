@@ -1,4 +1,5 @@
 import { CvBuilder } from "@/components/cv-builder";
+import { ApplicationPack } from "@/components/application-pack";
 import { templates, type CvTemplateId } from "@/data/content";
 import { Breadcrumbs, JsonLd } from "@/components/ui";
 import { pageMetadata, siteUrl } from "@/lib/site";
@@ -47,6 +48,7 @@ export default async function BuilderPage({
           <CvBuilder initialTemplate={initialTemplate} />
         </div>
       </section>
+      <ApplicationPack />
     </>
   );
 }

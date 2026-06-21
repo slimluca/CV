@@ -40,6 +40,73 @@ const sectionTests = [
 
 type AnalysisContext = { completeness?: number };
 
+export type CvCompletenessInput = {
+  name: string;
+  surname: string;
+  role: string;
+  email: string;
+  phone: string;
+  profile: string;
+  experiences: string[];
+  education: string[];
+  skills: string[];
+  languages: string;
+  certifications: string;
+  courses: string;
+  privacy: boolean;
+};
+
+const hasText = (value: string, minimum = 2) => value.trim().length >= minimum;
+
+export function hasMeaningfulCvContent(data: CvCompletenessInput) {
+  return Boolean(
+    hasText(data.name) ||
+    hasText(data.surname) ||
+    hasText(data.role) ||
+    hasText(data.email) ||
+    hasText(data.phone) ||
+    hasText(data.profile) ||
+    data.experiences.some((item) => hasText(item)) ||
+    data.education.some((item) => hasText(item)) ||
+    data.skills.some((item) => hasText(item)) ||
+    hasText(data.languages) ||
+    hasText(data.certifications) ||
+    hasText(data.courses),
+  );
+}
+
+export function calculateCvCompleteness(data: CvCompletenessInput) {
+  const skills = data.skills.filter((item) => hasText(item)).length;
+  const hasName = hasText(data.name);
+  const hasSurname = hasText(data.surname);
+  const hasEmail = hasText(data.email);
+  const hasPhone = hasText(data.phone);
+  const checks = [
+    { points: 6, complete: hasName || hasSurname },
+    { points: 4, complete: hasName && hasSurname },
+    { points: 6, complete: hasEmail || hasPhone },
+    { points: 4, complete: hasEmail && hasPhone },
+    { points: 10, complete: hasText(data.role) },
+    { points: 12, complete: hasText(data.profile, 20) },
+    {
+      points: 18,
+      complete: data.experiences.some((item) => hasText(item, 20)),
+    },
+    { points: 12, complete: data.education.some((item) => hasText(item, 12)) },
+    { points: skills >= 3 ? 12 : skills > 0 ? 4 : 0, complete: skills > 0 },
+    { points: 8, complete: hasText(data.languages) },
+    {
+      points: 5,
+      complete: hasText(data.certifications) || hasText(data.courses),
+    },
+    { points: 3, complete: data.privacy },
+  ];
+  return checks.reduce(
+    (total, check) => total + (check.complete ? check.points : 0),
+    0,
+  );
+}
+
 export function analyzeCv(text: string, context: AnalysisContext = {}) {
   const clean = text.trim();
   const wordCount = words(clean).length;

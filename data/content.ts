@@ -4,7 +4,32 @@ export type CvTemplateId =
   | "moderno"
   | "classico"
   | "primo-lavoro"
-  | "creativo";
+  | "creativo"
+  | "compatto-una-pagina"
+  | "executive-premium"
+  | "tecnico-ordinato"
+  | "retail-hospitality"
+  | "sanitario-pulito"
+  | "portfolio-leggero";
+
+export type CvTemplateGroup =
+  | "Essenziali"
+  | "Professionali"
+  | "Settore"
+  | "Creativi";
+
+type CvTemplate = {
+  id: CvTemplateId;
+  name: string;
+  tone: string;
+  group: CvTemplateGroup;
+  text: string;
+  bestFor: string;
+  when: string;
+  ats: string;
+  recommended: string;
+  cta: string;
+};
 
 export const tools = [
   {
@@ -79,56 +104,140 @@ export const tools = [
   },
 ];
 
-export const templates = [
+export const templates: CvTemplate[] = [
   {
-    id: "ats" as const,
+    id: "ats",
     name: "ATS semplice",
     tone: "Essenziale",
+    group: "Essenziali",
     text: "Una colonna, gerarchia nitida e sezioni facili da interpretare.",
     bestFor: "Candidature online, portali e aziende strutturate",
     when: "Quando leggibilità e ordine sono la priorità.",
     ats: "Molto adatto agli ATS, senza garanzie di selezione.",
+    recommended: "Candidature online, corporate e portali ATS",
     cta: "Usa ATS semplice",
   },
   {
-    id: "moderno" as const,
+    id: "moderno",
     name: "Moderno professionale",
     tone: "Equilibrato",
+    group: "Professionali",
     text: "Aspetto contemporaneo con contenuti centrali e accenti misurati.",
     bestFor: "Profili junior, intermedi e specialistici",
     when: "Per candidature aziendali che richiedono cura e sobrietà.",
     ats: "Struttura lineare e testo facilmente leggibile.",
+    recommended: "Ruoli aziendali, amministrativi e specialistici",
     cta: "Usa Moderno professionale",
   },
   {
-    id: "classico" as const,
+    id: "classico",
     name: "Classico elegante",
     tone: "Sobrio",
+    group: "Professionali",
     text: "Struttura tradizionale adatta a contesti formali e profili esperti.",
     bestFor: "Profili senior, amministrazione e contesti formali",
     when: "Quando è utile una presentazione tradizionale e autorevole.",
     ats: "Buona leggibilità con sezioni standard.",
+    recommended: "Contabilità, consulenza e contesti formali",
     cta: "Usa Classico elegante",
   },
   {
-    id: "primo-lavoro" as const,
+    id: "primo-lavoro",
     name: "Primo lavoro",
     tone: "Focalizzato",
+    group: "Essenziali",
     text: "Mette in primo piano formazione, progetti e competenze trasferibili.",
     bestFor: "Studenti, neodiplomati e prime esperienze",
     when: "Quando formazione e competenze contano più dello storico lavorativo.",
     ats: "Sezioni semplici e riconoscibili per i sistemi ATS.",
+    recommended: "Studenti, neolaureati, stage e primo impiego",
     cta: "Usa Primo lavoro",
   },
   {
-    id: "creativo" as const,
+    id: "creativo",
     name: "Creativo pulito",
     tone: "Distintivo",
+    group: "Creativi",
     text: "Più personalità visiva senza sacrificare ordine e leggibilità.",
     bestFor: "Comunicazione, design, retail e ruoli creativi",
     when: "Quando la presentazione visiva è pertinente al ruolo.",
     ats: "Pulito e testuale; per portali rigidi preferisci ATS semplice.",
+    recommended: "Comunicazione, retail e candidature dirette",
     cta: "Usa Creativo pulito",
+  },
+  {
+    id: "compatto-una-pagina",
+    name: "Compatto una pagina",
+    tone: "Conciso",
+    group: "Essenziali",
+    text: "Spazi ridotti e sezioni ravvicinate per un CV breve ma leggibile.",
+    bestFor: "Profili con esperienza che vogliono restare molto sintetici",
+    when: "Quando puoi raccontare il percorso in una pagina diretta.",
+    ats: "Struttura testuale compatta con titoli standard.",
+    recommended: "Professionisti operativi, commerciali e candidature rapide",
+    cta: "Usa Compatto una pagina",
+  },
+  {
+    id: "executive-premium",
+    name: "Executive premium",
+    tone: "Autorevole",
+    group: "Professionali",
+    text: "Gerarchia elegante, intestazione raffinata e respiro da profilo senior.",
+    bestFor: "Manager, consulenti, professionisti senior e ruoli di leadership",
+    when: "Quando responsabilità, impatto e autorevolezza devono emergere subito.",
+    ats: "Elegante ma lineare, con sezioni testuali riconoscibili.",
+    recommended: "Management, direzione, consulenza e ruoli executive",
+    cta: "Usa Executive premium",
+  },
+  {
+    id: "tecnico-ordinato",
+    name: "Tecnico ordinato",
+    tone: "Strutturato",
+    group: "Settore",
+    text: "Blocchi netti e competenze ben separate per una lettura tecnica rapida.",
+    bestFor: "IT, ingegneria, logistica, dati e professioni tecniche",
+    when: "Quando stack, strumenti, processi e certificazioni sono centrali.",
+    ats: "Molto leggibile; mantiene titoli e contenuti in ordine lineare.",
+    recommended: "Sviluppatori, tecnici, ingegneri, logistica e data",
+    cta: "Usa Tecnico ordinato",
+  },
+  {
+    id: "retail-hospitality",
+    name: "Retail e hospitality",
+    tone: "Accogliente",
+    group: "Settore",
+    text: "Layout caldo e pratico che valorizza servizio, lingue e disponibilità.",
+    bestFor:
+      "Vendita, ristorazione, hotellerie, front office e customer service",
+    when: "Quando relazione con il cliente e operatività contano insieme.",
+    ats: "Semplice e testuale; adatto anche alle candidature online.",
+    recommended: "Baristi, commessi, camerieri, receptionist e addetti clienti",
+    cta: "Usa Retail e hospitality",
+  },
+  {
+    id: "sanitario-pulito",
+    name: "Sanitario pulito",
+    tone: "Calmo",
+    group: "Settore",
+    text: "Stile clinico ordinato con attenzione a qualifiche e disponibilità.",
+    bestFor: "Professioni sanitarie, assistenziali e di cura",
+    when: "Quando credenziali, contesti assistenziali e procedure sono prioritari.",
+    ats: "Gerarchia pulita e sezioni standard facilmente interpretabili.",
+    recommended: "Infermieri, OSS, badanti e operatori della cura",
+    cta: "Usa Sanitario pulito",
+  },
+  {
+    id: "portfolio-leggero",
+    name: "Portfolio leggero",
+    tone: "Visuale",
+    group: "Creativi",
+    text: "Accento visivo misurato e maggiore evidenza per portfolio e link.",
+    bestFor: "Marketing, design, digital, contenuti e comunicazione",
+    when: "Quando progetti e presenza professionale online sostengono il profilo.",
+    ats: "Testuale e stampabile; per portali rigidi valuta ATS semplice.",
+    recommended:
+      "Designer, marketer, content creator e professionisti digitali",
+    cta: "Usa Portfolio leggero",
   },
 ];
 

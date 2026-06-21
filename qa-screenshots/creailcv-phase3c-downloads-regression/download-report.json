@@ -1,0 +1,80 @@
+{
+  "documents": [
+    {
+      "type": "cv-pdf",
+      "file": "marco-bianchi-addetto-vendita-retail-hospitality.pdf",
+      "exists": true,
+      "pages": 1,
+      "textLength": 575,
+      "requiredPresent": {
+        "Marco Bianchi": true,
+        "Addetto vendita": true,
+        "Negozio Centro": true,
+        "Vendita assistita": true
+      },
+      "forbiddenPresent": [],
+      "passed": true
+    },
+    {
+      "type": "letter-pdf",
+      "file": "lettera-presentazione-marco-bianchi-addetto-vendita.pdf",
+      "exists": true,
+      "pages": 1,
+      "textLength": 676,
+      "requiredPresent": {
+        "Marco Bianchi": true,
+        "Addetto vendita": true,
+        "Emporio Verde": true,
+        "Cordiali saluti": true
+      },
+      "forbiddenPresent": [],
+      "passed": true
+    },
+    {
+      "type": "letter-txt",
+      "file": "lettera-presentazione-marco-bianchi-addetto-vendita.txt",
+      "exists": true,
+      "pages": null,
+      "textLength": 655,
+      "requiredPresent": {
+        "Marco Bianchi": true,
+        "Addetto vendita": true,
+        "Emporio Verde": true,
+        "Cordiali saluti": true
+      },
+      "forbiddenPresent": [],
+      "passed": true
+    },
+    {
+      "type": "email-txt",
+      "file": "email-candidatura-marco-bianchi-addetto-vendita.txt",
+      "exists": true,
+      "pages": null,
+      "textLength": 334,
+      "requiredPresent": {
+        "Oggetto: Candidatura Addetto vendita - Marco Bianchi": true,
+        "Emporio Verde": true,
+        "CV allegato": true,
+        "Cordiali saluti": true
+      },
+      "forbiddenPresent": [],
+      "passed": true
+    },
+    {
+      "type": "email-pdf",
+      "file": "email-candidatura-marco-bianchi-addetto-vendita.pdf",
+      "exists": true,
+      "pages": 1,
+      "textLength": 360,
+      "requiredPresent": {
+        "Candidatura Addetto vendita - Marco Bianchi": true,
+        "Emporio Verde": true,
+        "CV allegato": true,
+        "Cordiali saluti": true
+      },
+      "forbiddenPresent": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
