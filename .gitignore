@@ -32,6 +32,8 @@
 /qa-screenshots/creailcv-phase3c-downloads-regression/*.txt
 /qa-screenshots/creailcv-phase3c-downloads-regression/*.mjs
 /qa-screenshots/creailcv-phase3c-downloads-regression/*.py
+/qa-screenshots/creailcv-brand-seo-polish/*.png
+/qa-screenshots/creailcv-brand-seo-polish/*.mjs
 
 # next.js
 /.next/
