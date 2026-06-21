@@ -1,0 +1,586 @@
+{
+  "generatedAt": "2026-06-21T08:56:16.686Z",
+  "pages": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Crea CV online e controlla ATS",
+      "h1": "Crea un CV professionale in italiano, pronto per candidature e ATS",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Strumenti gratuiti per CV e candidatura | creailcv.it",
+      "h1": "Dalla bozza del CV all’invio.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/generatore-profilo-cv",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Generatore profilo CV gratuito | creailcv.it",
+      "h1": "Generatore profilo CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/competenze-cv",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Competenze CV per ruolo | creailcv.it",
+      "h1": "Competenze per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/parole-chiave-cv",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Parole chiave CV da un annuncio | creailcv.it",
+      "h1": "Parole chiave per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-barista",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "CV da barista: esempio, competenze e consigli | creailcv.it",
+      "h1": "CV da barista: esempio, competenze e consigli",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-infermiere",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "CV da infermiere: competenze cliniche ed esempio | creailcv.it",
+      "h1": "CV da infermiere: competenze cliniche ed esempio",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-oss",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "CV OSS: esempio, competenze e parole chiave | creailcv.it",
+      "h1": "CV OSS: esempio, competenze e parole chiave",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-neolaureato",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "CV neolaureato: valorizza studi e primi risultati | creailcv.it",
+      "h1": "CV neolaureato: valorizza studi e primi risultati",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-stage",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "CV per stage: struttura ed esempio pratico | creailcv.it",
+      "h1": "CV per stage: struttura ed esempio pratico",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-candidatura-spontanea",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "CV per candidatura spontanea: come renderlo mirato | creailcv.it",
+      "h1": "CV per candidatura spontanea: come renderlo mirato",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Crea il tuo CV online gratis | creailcv.it",
+      "h1": "Costruisci un CV chiaro, una sezione alla volta.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Crea CV online e controlla ATS",
+      "h1": "Crea un CV professionale in italiano, pronto per candidature e ATS",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Strumenti gratuiti per CV e candidatura | creailcv.it",
+      "h1": "Dalla bozza del CV all’invio.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/generatore-profilo-cv",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Generatore profilo CV gratuito | creailcv.it",
+      "h1": "Generatore profilo CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/competenze-cv",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Competenze CV per ruolo | creailcv.it",
+      "h1": "Competenze per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/parole-chiave-cv",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Parole chiave CV da un annuncio | creailcv.it",
+      "h1": "Parole chiave per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-barista",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "CV da barista: esempio, competenze e consigli | creailcv.it",
+      "h1": "CV da barista: esempio, competenze e consigli",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-infermiere",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "CV da infermiere: competenze cliniche ed esempio | creailcv.it",
+      "h1": "CV da infermiere: competenze cliniche ed esempio",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-oss",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "CV OSS: esempio, competenze e parole chiave | creailcv.it",
+      "h1": "CV OSS: esempio, competenze e parole chiave",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-neolaureato",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "CV neolaureato: valorizza studi e primi risultati | creailcv.it",
+      "h1": "CV neolaureato: valorizza studi e primi risultati",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-stage",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "CV per stage: struttura ed esempio pratico | creailcv.it",
+      "h1": "CV per stage: struttura ed esempio pratico",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-candidatura-spontanea",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "CV per candidatura spontanea: come renderlo mirato | creailcv.it",
+      "h1": "CV per candidatura spontanea: come renderlo mirato",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Crea il tuo CV online gratis | creailcv.it",
+      "h1": "Costruisci un CV chiaro, una sezione alla volta.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "Crea CV online e controlla ATS",
+      "h1": "Crea un CV professionale in italiano, pronto per candidature e ATS",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "Strumenti gratuiti per CV e candidatura | creailcv.it",
+      "h1": "Dalla bozza del CV all’invio.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/generatore-profilo-cv",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "Generatore profilo CV gratuito | creailcv.it",
+      "h1": "Generatore profilo CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/competenze-cv",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "Competenze CV per ruolo | creailcv.it",
+      "h1": "Competenze per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/parole-chiave-cv",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "Parole chiave CV da un annuncio | creailcv.it",
+      "h1": "Parole chiave per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-barista",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "CV da barista: esempio, competenze e consigli | creailcv.it",
+      "h1": "CV da barista: esempio, competenze e consigli",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-infermiere",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "CV da infermiere: competenze cliniche ed esempio | creailcv.it",
+      "h1": "CV da infermiere: competenze cliniche ed esempio",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-oss",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "CV OSS: esempio, competenze e parole chiave | creailcv.it",
+      "h1": "CV OSS: esempio, competenze e parole chiave",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-neolaureato",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "CV neolaureato: valorizza studi e primi risultati | creailcv.it",
+      "h1": "CV neolaureato: valorizza studi e primi risultati",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-stage",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "CV per stage: struttura ed esempio pratico | creailcv.it",
+      "h1": "CV per stage: struttura ed esempio pratico",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-candidatura-spontanea",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "CV per candidatura spontanea: come renderlo mirato | creailcv.it",
+      "h1": "CV per candidatura spontanea: come renderlo mirato",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "mobile-390",
+      "status": 200,
+      "title": "Crea il tuo CV online gratis | creailcv.it",
+      "h1": "Costruisci un CV chiaro, una sezione alla volta.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "Crea CV online e controlla ATS",
+      "h1": "Crea un CV professionale in italiano, pronto per candidature e ATS",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "Strumenti gratuiti per CV e candidatura | creailcv.it",
+      "h1": "Dalla bozza del CV all’invio.",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/generatore-profilo-cv",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "Generatore profilo CV gratuito | creailcv.it",
+      "h1": "Generatore profilo CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/competenze-cv",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "Competenze CV per ruolo | creailcv.it",
+      "h1": "Competenze per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/strumenti/parole-chiave-cv",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "Parole chiave CV da un annuncio | creailcv.it",
+      "h1": "Parole chiave per il CV",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-barista",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "CV da barista: esempio, competenze e consigli | creailcv.it",
+      "h1": "CV da barista: esempio, competenze e consigli",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-infermiere",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "CV da infermiere: competenze cliniche ed esempio | creailcv.it",
+      "h1": "CV da infermiere: competenze cliniche ed esempio",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-oss",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "CV OSS: esempio, competenze e parole chiave | creailcv.it",
+      "h1": "CV OSS: esempio, competenze e parole chiave",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-neolaureato",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "CV neolaureato: valorizza studi e primi risultati | creailcv.it",
+      "h1": "CV neolaureato: valorizza studi e primi risultati",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-stage",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "CV per stage: struttura ed esempio pratico | creailcv.it",
+      "h1": "CV per stage: struttura ed esempio pratico",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/cv-candidatura-spontanea",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "CV per candidatura spontanea: come renderlo mirato | creailcv.it",
+      "h1": "CV per candidatura spontanea: come renderlo mirato",
+      "overflow": false,
+      "consoleErrors": []
+    },
+    {
+      "route": "/crea-cv",
+      "viewport": "mobile-360",
+      "status": 200,
+      "title": "Crea il tuo CV online gratis | creailcv.it",
+      "h1": "Costruisci un CV chiaro, una sezione alla volta.",
+      "overflow": false,
+      "consoleErrors": []
+    }
+  ],
+  "tools": {
+    "profile": {
+      "output": "Infermiere con esperienza operativa e crescente autonomia nel settore assistenza ospedaliera. Lavora con precisione, responsabilità e attenzione ai risultati concreti.",
+      "copied": true,
+      "builderHref": "/crea-cv",
+      "passed": true
+    },
+    "skills": {
+      "containsAccounting": true,
+      "containsGroups": true,
+      "passed": true
+    },
+    "keywords": {
+      "foundApi": true,
+      "warning": true,
+      "matcherHref": "/strumenti/confronta-cv-annuncio",
+      "passed": true
+    }
+  },
+  "seo": {
+    "sitemapUrlCount": 43,
+    "requiredUrlsPresent": true,
+    "metadata": [
+      {
+        "route": "/cv-barista",
+        "title": "CV da barista: esempio, competenze e consigli | creailcv.it",
+        "description": "Prepara un CV da barista concreto con profilo, competenze di banco e parole chiave pertinenti.",
+        "canonical": "https://creailcv.it/cv-barista",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-cassiere",
+        "title": "CV da cassiere: profilo, competenze ed esempi | creailcv.it",
+        "description": "Scrivi un CV da cassiere chiaro per supermercati e negozi, con attività verificabili e competenze utili.",
+        "canonical": "https://creailcv.it/cv-cassiere",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-receptionist",
+        "title": "CV da receptionist: esempio e competenze | creailcv.it",
+        "description": "Crea un CV da receptionist con lingue, accoglienza, prenotazioni e strumenti gestionali ben evidenziati.",
+        "canonical": "https://creailcv.it/cv-receptionist",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-segretaria",
+        "title": "CV da segretaria: esempio professionale | creailcv.it",
+        "description": "Organizza un CV da segretaria con amministrazione, agenda, documenti e competenze digitali concrete.",
+        "canonical": "https://creailcv.it/cv-segretaria",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-infermiere",
+        "title": "CV da infermiere: competenze cliniche ed esempio | creailcv.it",
+        "description": "Prepara un CV da infermiere con reparto, procedure, iscrizione e competenze cliniche presentate con chiarezza.",
+        "canonical": "https://creailcv.it/cv-infermiere",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-oss",
+        "title": "CV OSS: esempio, competenze e parole chiave | creailcv.it",
+        "description": "Crea un CV da operatore socio sanitario con qualifica, assistenza di base e contesti di lavoro ben descritti.",
+        "canonical": "https://creailcv.it/cv-oss",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-badante",
+        "title": "CV da badante: esperienza e competenze | creailcv.it",
+        "description": "Scrivi un CV da badante rispettoso e concreto, con assistenza quotidiana, disponibilità e referenze gestite correttamente.",
+        "canonical": "https://creailcv.it/cv-badante",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-autista",
+        "title": "CV da autista: patenti, esperienza e profilo | creailcv.it",
+        "description": "Prepara un CV da autista con patenti, CQC, mezzi, tratte e sicurezza presentati correttamente.",
+        "canonical": "https://creailcv.it/cv-autista",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-contabile",
+        "title": "CV da contabile: profilo, software e competenze | creailcv.it",
+        "description": "Organizza un CV da contabile con ciclo attivo e passivo, adempimenti e software indicati in modo preciso.",
+        "canonical": "https://creailcv.it/cv-contabile",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-sviluppatore",
+        "title": "CV da sviluppatore: stack, progetti ed esempio | creailcv.it",
+        "description": "Crea un CV da sviluppatore con stack, progetti e risultati tecnici leggibili anche dai recruiter.",
+        "canonical": "https://creailcv.it/cv-sviluppatore",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-neolaureato",
+        "title": "CV neolaureato: valorizza studi e primi risultati | creailcv.it",
+        "description": "Crea un CV da neolaureato concreto per primo impiego, graduate program e stage.",
+        "canonical": "https://creailcv.it/cv-neolaureato",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-stage",
+        "title": "CV per stage: struttura ed esempio pratico | creailcv.it",
+        "description": "Prepara un CV per stage mettendo in evidenza formazione, disponibilità e competenze dimostrabili.",
+        "canonical": "https://creailcv.it/cv-stage",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-candidatura-spontanea",
+        "title": "CV per candidatura spontanea: come renderlo mirato | creailcv.it",
+        "description": "Adatta CV ed email per una candidatura spontanea credibile e specifica.",
+        "canonical": "https://creailcv.it/cv-candidatura-spontanea",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/cv-cambio-lavoro",
+        "title": "CV per cambio lavoro o carriera | creailcv.it",
+        "description": "Riorganizza il CV per un cambio lavoro evidenziando competenze trasferibili e motivazione concreta.",
+        "canonical": "https://creailcv.it/cv-cambio-lavoro",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/strumenti/generatore-profilo-cv",
+        "title": "Generatore profilo CV gratuito | creailcv.it",
+        "description": "Crea una bozza di profilo professionale per il CV in base a ruolo, settore, esperienza e tono.",
+        "canonical": "https://creailcv.it/strumenti/generatore-profilo-cv",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/strumenti/competenze-cv",
+        "title": "Competenze CV per ruolo | creailcv.it",
+        "description": "Trova competenze tecniche, trasversali e digitali da valutare per il tuo ruolo e livello di esperienza.",
+        "canonical": "https://creailcv.it/strumenti/competenze-cv",
+        "hasJobPosting": false
+      },
+      {
+        "route": "/strumenti/parole-chiave-cv",
+        "title": "Parole chiave CV da un annuncio | creailcv.it",
+        "description": "Analizza un annuncio, individua parole rilevanti e confrontale con il CV senza keyword stuffing.",
+        "canonical": "https://creailcv.it/strumenti/parole-chiave-cv",
+        "hasJobPosting": false
+      }
+    ],
+    "uniqueTitles": true,
+    "uniqueDescriptions": true,
+    "noLocalhostCanonicals": true,
+    "noJobPosting": true
+  },
+  "errors": []
+}

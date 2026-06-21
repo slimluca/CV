@@ -21,6 +21,8 @@
 /qa-screenshots/creailcv-phase2b-cv-templates/*.png
 /qa-screenshots/creailcv-phase2b-cv-templates/*.pdf
 /qa-screenshots/creailcv-phase2b-cv-templates/*.mjs
+/qa-screenshots/creailcv-phase3a-seo-tools/*.png
+/qa-screenshots/creailcv-phase3a-seo-tools/*.mjs
 
 # next.js
 /.next/

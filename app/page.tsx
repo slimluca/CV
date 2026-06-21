@@ -305,6 +305,17 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {tools.slice(7).map((tool) => (
+              <Link
+                className="rounded-xl border border-white/15 px-4 py-3 text-sm font-bold text-[#dce7e4] hover:bg-white/[.08]"
+                href={tool.href}
+                key={tool.href}
+              >
+                {tool.title} <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
       <section className="section container-site">
@@ -374,6 +385,12 @@ export default function Home() {
               ["CV cameriere", "/cv-cameriere"],
               ["CV operaio", "/cv-operaio"],
               ["CV magazziniere", "/cv-magazziniere"],
+              ["CV barista", "/cv-barista"],
+              ["CV infermiere", "/cv-infermiere"],
+              ["CV OSS", "/cv-oss"],
+              ["CV neolaureato", "/cv-neolaureato"],
+              ["CV per stage", "/cv-stage"],
+              ["Cambio lavoro", "/cv-cambio-lavoro"],
             ].map(([label, href]) => (
               <Link
                 className="rounded-xl border border-[#d8dfda] bg-[#f8f7f2] px-4 py-3 text-sm font-bold hover:border-[#176b4d] hover:text-[#176b4d]"

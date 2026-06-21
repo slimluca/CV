@@ -11,12 +11,15 @@ import {
   SeoHero,
 } from "@/components/ui";
 import { basicPages, professionPages, templates } from "@/data/content";
+import { seoProfessionPages, situationPages } from "@/data/seo-content";
 import { pageMetadata, siteUrl } from "@/lib/site";
 
 export function generateStaticParams() {
   return [
     ...Object.keys(basicPages),
     ...Object.keys(professionPages),
+    ...Object.keys(seoProfessionPages),
+    ...Object.keys(situationPages),
     "modelli-curriculum-vitae",
     "contatti",
   ].map((slug) => ({ slug }));
@@ -29,6 +32,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const profession = professionPages[slug];
+  const seoProfession = seoProfessionPages[slug];
+  const situation = situationPages[slug];
   const basic = basicPages[slug];
   if (profession)
     return pageMetadata(
@@ -36,6 +41,14 @@ export async function generateMetadata({
       `${profession.intro.slice(0, 145)}…`,
       `/${slug}`,
     );
+  if (seoProfession)
+    return pageMetadata(
+      seoProfession.title,
+      seoProfession.description,
+      `/${slug}`,
+    );
+  if (situation)
+    return pageMetadata(situation.title, situation.description, `/${slug}`);
   if (basic) return pageMetadata(basic.title, basic.description, `/${slug}`);
   if (slug === "modelli-curriculum-vitae")
     return pageMetadata(
@@ -58,7 +71,9 @@ export default async function ContentPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  if (professionPages[slug]) return <ProfessionPage slug={slug} />;
+  if (professionPages[slug] || seoProfessionPages[slug])
+    return <ProfessionPage slug={slug} />;
+  if (situationPages[slug]) return <SituationPage slug={slug} />;
   if (slug === "modelli-curriculum-vitae") return <TemplatesPage />;
   if (slug === "contatti") return <ContactPage />;
   const page = basicPages[slug];
@@ -119,7 +134,9 @@ export default async function ContentPage({
 }
 
 function ProfessionPage({ slug }: { slug: string }) {
-  const page = professionPages[slug];
+  const seoPage = seoProfessionPages[slug];
+  const page = professionPages[slug] ?? seoPage;
+  const template = seoPage?.template;
   const url = `${siteUrl}/${slug}`;
   return (
     <>
@@ -151,8 +168,15 @@ function ProfessionPage({ slug }: { slug: string }) {
         eyebrow={`CV per ${page.role}`}
         title={page.title}
         intro={page.intro}
+        primaryHref={template ? `/crea-cv?template=${template}` : "/crea-cv"}
       />
       <section className="container-site grid gap-6 pb-16 lg:grid-cols-2">
+        {seoPage && (
+          <Card className="p-6 sm:p-8 lg:col-span-2">
+            <h2 className="title-md">Cosa si aspettano i recruiter</h2>
+            <List items={seoPage.expectations} />
+          </Card>
+        )}
         <Card className="p-6 sm:p-8">
           <p className="eyebrow">Esempio</p>
           <h2 className="title-md mt-3">Profilo professionale</h2>
@@ -197,7 +221,68 @@ function ProfessionPage({ slug }: { slug: string }) {
           <h2 className="title-md">Errori da evitare</h2>
           <List items={page.mistakes} />
         </Card>
+        {seoPage && (
+          <Card className="p-6 sm:p-8 lg:col-span-2">
+            <p className="eyebrow">Esempi concreti</p>
+            <h2 className="title-md mt-3">Come descrivere l’esperienza</h2>
+            <List items={seoPage.bullets} />
+          </Card>
+        )}
       </section>
+      {template && (
+        <section className="container-site pb-16">
+          <Card className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="eyebrow">Modello consigliato</p>
+              <h2 className="title-md mt-3">
+                Apri il builder con il formato più adatto
+              </h2>
+              <p className="mt-3 max-w-3xl text-sm leading-6 text-[#5e6c69]">
+                Il modello cambia la presentazione, non il punteggio ATS: la
+                qualità dipende sempre da contenuti reali, pertinenti e chiari.
+              </p>
+            </div>
+            <Link
+              className="btn btn-primary"
+              href={`/crea-cv?template=${template}`}
+            >
+              Usa il modello consigliato
+            </Link>
+            <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm font-bold lg:col-span-2">
+              <Link
+                className="text-[#176b4d] underline"
+                href="/strumenti/controllo-cv-ats"
+              >
+                Controllo ATS
+              </Link>
+              <Link
+                className="text-[#176b4d] underline"
+                href="/strumenti/confronta-cv-annuncio"
+              >
+                Confronta CV e annuncio
+              </Link>
+              <Link
+                className="text-[#176b4d] underline"
+                href="/modelli-curriculum-vitae"
+              >
+                Confronta i modelli
+              </Link>
+              <Link
+                className="text-[#176b4d] underline"
+                href="/strumenti/generatore-lettera-presentazione"
+              >
+                Prepara la lettera
+              </Link>
+              <Link
+                className="text-[#176b4d] underline"
+                href="/strumenti/email-candidatura"
+              >
+                Prepara l’email
+              </Link>
+            </div>
+          </Card>
+        </section>
+      )}
       <section className="container-site grid gap-8 pb-16 lg:grid-cols-[.6fr_1.4fr]">
         <h2 className="title-md">Domande frequenti</h2>
         <FAQ items={page.faqs} />
@@ -205,7 +290,125 @@ function ProfessionPage({ slug }: { slug: string }) {
       <PageCTA
         title={`Crea il tuo CV da ${page.role.toLowerCase()}`}
         text="Parti dall’esempio, ma rendi ogni sezione fedele al tuo percorso e alla posizione che stai cercando."
+        href={template ? `/crea-cv?template=${template}` : "/crea-cv"}
       />
+    </>
+  );
+}
+
+function SituationPage({ slug }: { slug: string }) {
+  const page = situationPages[slug];
+  const url = `${siteUrl}/${slug}`;
+  return (
+    <>
+      <Breadcrumbs
+        items={[{ name: "Home", href: "/" }, { name: page.title }]}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+            { "@type": "ListItem", position: 2, name: page.title, item: url },
+          ],
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: page.faqs.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: { "@type": "Answer", text: item.answer },
+          })),
+        }}
+      />
+      <SeoHero
+        eyebrow="Guida per il tuo percorso"
+        title={page.title}
+        intro={page.intro}
+        primaryHref={`/crea-cv?template=${page.template}`}
+        primaryLabel="Crea il CV con il modello consigliato"
+      />
+      <section className="container-site grid gap-6 pb-16 lg:grid-cols-2">
+        <Card className="p-6 sm:p-8">
+          <h2 className="title-md">Per chi è questa guida</h2>
+          <p className="mt-4 leading-7 text-[#5e6c69]">{page.audience}</p>
+        </Card>
+        <Card className="p-6 sm:p-8">
+          <h2 className="title-md">Struttura consigliata</h2>
+          <List items={page.structure} />
+        </Card>
+        <Card className="p-6 sm:p-8">
+          <h2 className="title-md">Come valorizzare poca esperienza</h2>
+          <p className="mt-4 leading-7 text-[#5e6c69]">{page.limited}</p>
+        </Card>
+        <Card className="p-6 sm:p-8">
+          <h2 className="title-md">Competenze da rendere visibili</h2>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {page.skills.map((skill) => (
+              <span
+                className="rounded-lg bg-[#e8f1ec] px-3 py-2 text-sm font-bold text-[#176b4d]"
+                key={skill}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </Card>
+        <Card className="p-6 sm:p-8 lg:col-span-2">
+          <p className="eyebrow">Esempio</p>
+          <h2 className="title-md mt-3">Profilo professionale</h2>
+          <blockquote className="mt-5 border-l-4 border-[#176b4d] pl-5 leading-7 text-[#4f605b]">
+            {page.profile}
+          </blockquote>
+        </Card>
+        <Card className="p-6 sm:p-8 lg:col-span-2">
+          <h2 className="title-md">Errori da evitare</h2>
+          <List items={page.mistakes} />
+        </Card>
+      </section>
+      <section className="container-site pb-16">
+        <Card className="flex flex-wrap gap-3 p-6 sm:p-8">
+          <Link
+            className="btn btn-primary"
+            href={`/crea-cv?template=${page.template}`}
+          >
+            Apri il builder
+          </Link>
+          <Link className="btn btn-secondary" href={page.secondaryHref}>
+            {page.secondaryLabel}
+          </Link>
+          <Link
+            className="btn btn-secondary"
+            href="/strumenti/controllo-cv-ats"
+          >
+            Controlla il CV per ATS
+          </Link>
+          <Link className="btn btn-secondary" href="/strumenti/quiz-modello-cv">
+            Fai il quiz del modello
+          </Link>
+          <Link
+            className="btn btn-secondary"
+            href="/strumenti/generatore-lettera-presentazione"
+          >
+            Prepara la lettera
+          </Link>
+          <Link
+            className="btn btn-secondary"
+            href="/strumenti/email-candidatura"
+          >
+            Prepara l’email
+          </Link>
+        </Card>
+      </section>
+      <section className="container-site grid gap-8 pb-16 lg:grid-cols-[.6fr_1.4fr]">
+        <h2 className="title-md">Domande frequenti</h2>
+        <FAQ items={page.faqs} />
+      </section>
+      <PageCTA href={`/crea-cv?template=${page.template}`} />
     </>
   );
 }

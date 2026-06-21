@@ -56,6 +56,27 @@ export const tools = [
     text: "Trova il formato più adatto al tuo profilo e al settore.",
     mark: "07",
   },
+  {
+    group: "Crea",
+    title: "Generatore profilo CV",
+    href: "/strumenti/generatore-profilo-cv",
+    text: "Crea una bozza breve da personalizzare con esperienza e contributi reali.",
+    mark: "08",
+  },
+  {
+    group: "Crea",
+    title: "Competenze per il CV",
+    href: "/strumenti/competenze-cv",
+    text: "Trova competenze tecniche, trasversali e digitali coerenti con il ruolo.",
+    mark: "09",
+  },
+  {
+    group: "Adatta",
+    title: "Parole chiave CV",
+    href: "/strumenti/parole-chiave-cv",
+    text: "Analizza il lessico di un annuncio e confrontalo con il curriculum.",
+    mark: "10",
+  },
 ];
 
 export const templates = [
